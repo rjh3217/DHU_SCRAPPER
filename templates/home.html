@@ -4,17 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>대구한의대 잡스크래퍼</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
   </head>
   <body>
-    <h1>대구한의대 잡스크래퍼</h1>
-    <p>인크루트, 잡코리아, 인디드등 구직 내용을 확인하세요.</p>
-    <form>
-      <input
-        type="text"
-        placeholder="회사명이나 직종을 입력해주세요"
-        name="keyword"
-      />
-      <button>스크래핑</button>
-    </form>
+    <header class="container">
+      <h1>대구한의대 잡스크래퍼{{ title }}</h1>
+    </header>
+
+    <main class="container">
+      <p>인크루트, 잡코리아, 인디드등 구직 내용을 확인하세요.</p>
+      <form action="/search">
+        <input
+          type="text"
+          placeholder="회사명이나 직종을 입력해주세요"
+          name="keyword"
+        />
+        <button>검색</button>
+      </form>
+    </main>
+    <footer class="container">
+      copyright @ dhu-scrapper All rights reserved
+    </footer>
   </body>
 </html>
